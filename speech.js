@@ -10,7 +10,7 @@ import {
 
 var recognition;
 var timeoutForTimer;
-const NUMBER_OF_SECONDS = 10;
+const NUMBER_OF_SECONDS = 30;
 
 window.SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Speech Colours</title>
+  <link rel="stylesheet" href="../../base.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="heading"> Say a Color Game </div>
+  <div class="">
+    <div class="left-header float">
+      <span>
+        <strong>Instructions : </strong>
+        You have 30 seconds after clicking Start, to call out as many colors as you possibly can. This game uses
+        Chrome's Speech Recognition
+        which is an Experimental Web Platform feature. Hence, it might not be able to read every single word you say
+        perfectly.
+      </span>
+      <br>
+      <span>
+        <strong>Set up : </strong>
+        <br>
+        1) You need to be using the Chrome Browser
+        <br>
+        2) Type "about:flags" in the url and make sure you have "Experimental web platform features" enabled
+      </span>
+      <span>
+        <br>
+        <strong>GitHub Link : </strong>
+        Repository</span>
+    </div>
+
+    <div class="right-header float">
+      <button class="start">
+        <span class="startButtonSpan">
+          Start
+        </span>
+      </button>
+      <div class="highScore">HighScore : <span class="highScoreAmount">0</span></div>
+    </div>
+  </div>
+  <br>
+  <div class="resultdiv">
+    <h3 class="result hide"></h3>
+  </div>
+
+  <div class="colors"></div>
+
+  <div class="footer">
+    This project was created by <a href="https://twitter.com/MarkBDsouza" target="_blank">Mark Dsouza</a> & has been
+    done as part of the
+    great Wes Bos's <a href="https://beginnerjavascript.com/" target="_blank">beginner
+      JavaScript course</a>!!!
+  </div>
+  <script src="./speech.js"></script>
+
+</body>
+
+</html>

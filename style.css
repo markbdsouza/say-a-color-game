@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+:root {
+  --main-bg-color: deepskyblue;
+  --secondary-bg-color: black;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  transition: background-color 0.4s;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Chewy";
+  font-size: 5rem;
+  margin: 1rem 0 0 0;
+  transition: all 0.4s;
+  position: relative;
+  color: var(--secondary-bg-color);
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.left-header {
+  width: 70%;
+  text-align: left;
+  padding-left: 10rem;
+  color: var(--secondary-bg-color);
+}
+.right-header {
+  width: 30%;
+  margin: auto;
+  padding: 2rem;
+}
+
+button {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  border-width: 1rem;
+  background-color: var(--secondary-bg-color);
+  border-color: rgba(0, 0, 0, 0.3);
+  transition: all 1s;
+  outline: none;
+}
+button:hover {
+  border-width: 0px;
+}
+
+button span {
+  color: var(--main-bg-color);
+}
+
+.highScore {
+  padding-top: 2rem;
+  color: var(--secondary-bg-color);
+}
+
+.result {
+  right: 0;
+  transition: all 2s;
+  opacity: 1;
+  color: var(--secondary-bg-color);
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.hide {
+  transform: translateX(-100%);
+  opacity: 0.1;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem;
+}
+
+.colors span {
+  color: rgba(0, 0, 0, 0.4);
+  flex: 1;
+  padding: 1rem;
+  font-weight: 900;
+}
+
+.colors span.dark {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@keyframes jump {
+  from {
+    transform: scale(2.5) rotate(-3deg);
+    box-shadow: var(--box-shadow);
+  }
+  to {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.colors span.got {
+  text-decoration: line-through;
+  animation: jump 0.2s ease-in-out 2 alternate-reverse;
+}
+
+.float {
+  float: left;
+}
+
+.resultdiv {
+  clear: left;
+}
+
+.footer {
+  padding: 2rem 0rem 1rem 0rem;
+  background-color: black;
+  color: white;
+}
